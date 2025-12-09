@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>M.Tech Research Guidance | Expert Academic Support</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background:#f8f9fa;
+color:#2c3e50;
+line-height:1.6;
+}
+
+header{
+background:white;
+padding:20px 0;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+position:sticky;
+top:0;
+z-index:100;
+border-bottom:1px solid #e9ecef;
+}
+
+.header-content{
+width:90%;
+max-width:1200px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo{
+font-weight:600;
+font-size:22px;
+color:#1a1a1a;
+letter-spacing:-0.5px;
+}
+
+.logo span{
+color:#2c5aa0;
+font-weight:700;
+}
+
+.nav a{
+margin-left:35px;
+text-decoration:none;
+font-size:15px;
+color:#495057;
+font-weight:500;
+transition:color 0.3s ease;
+}
+
+.nav a:hover{
+color:#2c5aa0;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+.hero{
+padding:80px 0;
+text-align:center;
+background:white;
+margin:40px 0;
+border-radius:8px;
+border:1px solid #e9ecef;
+}
+
+.hero h1{
+font-size:42px;
+font-weight:700;
+color:#1a1a1a;
+margin-bottom:20px;
+letter-spacing:-1px;
+}
+
+.hero p{
+max-width:700px;
+font-size:17px;
+color:#6c757d;
+margin:0 auto 35px;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+padding:14px 32px;
+background:#2c5aa0;
+color:white;
+border-radius:6px;
+text-decoration:none;
+font-size:15px;
+font-weight:600;
+margin:8px;
+transition:all 0.3s ease;
+border:2px solid #2c5aa0;
+}
+
+.btn:hover{
+background:#234a85;
+border-color:#234a85;
+transform:translateY(-2px);
+box-shadow:0 4px 12px rgba(44,90,160,0.3);
+}
+
+.btn-outline{
+background:white;
+color:#2c5aa0;
+border:2px solid #2c5aa0;
+}
+
+.btn-outline:hover{
+background:#2c5aa0;
+color:white;
+}
+
+.section{
+margin:70px 0;
+}
+
+.section-title{
+font-size:32px;
+font-weight:700;
+text-align:center;
+margin-bottom:15px;
+color:#1a1a1a;
+letter-spacing:-0.5px;
+}
+
+.section-subtitle{
+text-align:center;
+color:#6c757d;
+font-size:16px;
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.card{
+background:white;
+padding:35px 30px;
+border-radius:8px;
+border:1px solid #e9ecef;
+transition:all 0.3s ease;
+}
+
+.card:hover{
+box-shadow:0 8px 24px rgba(0,0,0,0.1);
+transform:translateY(-5px);
+border-color:#dee2e6;
+}
+
+.card h3{
+font-size:20px;
+margin-bottom:18px;
+color:#1a1a1a;
+font-weight:600;
+}
+
+.card-list{
+line-height:1.9;
+font-size:15px;
+color:#495057;
+}
+
+.card-list div{
+padding-left:24px;
+position:relative;
+margin-bottom:10px;
+}
+
+.card-list div::before{
+content:'';
+position:absolute;
+left:0;
+top:10px;
+width:6px;
+height:6px;
+background:#2c5aa0;
+border-radius:50%;
+}
+
+.icon-number{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:45px;
+height:45px;
+background:#f8f9fa;
+border-radius:8px;
+margin-bottom:20px;
+font-size:20px;
+font-weight:700;
+color:#2c5aa0;
+border:1px solid #e9ecef;
+}
+
+.topic-grid{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:25px;
+}
+
+.topic{
+background:#f8f9fa;
+padding:10px 18px;
+border-radius:6px;
+font-size:14px;
+color:#495057;
+font-weight:500;
+border:1px solid #e9ecef;
+transition:all 0.3s ease;
+}
+
+.topic:hover{
+background:#2c5aa0;
+color:white;
+border-color:#2c5aa0;
+}
+
+.contact-section{
+background:white;
+padding:60px;
+border-radius:8px;
+border:1px solid #e9ecef;
+text-align:center;
+}
+
+.contact-title{
+font-size:28px;
+font-weight:700;
+margin-bottom:12px;
+color:#1a1a1a;
+}
+
+.contact-subtitle{
+color:#6c757d;
+font-size:16px;
+margin-bottom:40px;
+}
+
+.contact-info{
+display:inline-block;
+margin:15px 30px;
+}
+
+.contact-label{
+font-size:13px;
+color:#6c757d;
+text-transform:uppercase;
+letter-spacing:0.5px;
+font-weight:600;
+margin-bottom:8px;
+}
+
+.contact-number{
+font-size:24px;
+color:#1a1a1a;
+font-weight:700;
+letter-spacing:0.5px;
+}
+
+.divider{
+height:1px;
+background:#e9ecef;
+margin:40px auto;
+max-width:600px;
+}
+
+.info-box{
+background:#f8f9fa;
+padding:25px;
+border-radius:8px;
+border:1px solid #e9ecef;
+margin-top:35px;
+max-width:700px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.info-box p{
+font-size:14px;
+color:#495057;
+line-height:1.8;
+margin:0;
+}
+
+.footer{
+font-size:14px;
+padding:35px;
+margin-top:80px;
+text-align:center;
+color:#6c757d;
+border-top:1px solid #e9ecef;
+background:white;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+gap:25px;
+margin:50px 0;
+}
+
+.stat-card{
+background:white;
+padding:30px;
+text-align:center;
+border-radius:8px;
+border:1px solid #e9ecef;
+}
+
+.stat-number{
+font-size:36px;
+font-weight:700;
+color:#2c5aa0;
+margin-bottom:8px;
+}
+
+.stat-label{
+font-size:14px;
+color:#6c757d;
+text-transform:uppercase;
+letter-spacing:0.5px;
+font-weight:600;
+}
+
+@media (max-width:768px){
+.hero h1{font-size:32px;}
+.hero p{font-size:16px;}
+.section-title{font-size:26px;}
+.nav{display:none;}
+.grid{grid-template-columns:1fr;}
+.contact-info{display:block;margin:20px 0;}
+.contact-section{padding:40px 25px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="header-content">
+<div class="logo"><span>M.Tech</span> Research Guidance</div>
+<div class="nav">
+<a href="#services">Services</a>
+<a href="#domains">Domains</a>
+<a href="#topics">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</header>
+
+<div class="container">
+
+<section class="hero">
+<h1>Expert M.Tech Project Guidance</h1>
+<p>
+Comprehensive academic support for M.Tech students. From topic selection to final defense, we provide structured guidance including literature review, implementation support, documentation assistance, and viva preparation.
+</p>
+<a class="btn" href="#contact">Get Started</a>
+
+</section>
+
+<div class="stats"> 
+<div class="stat-card">
+<div class="stat-number">100+</div>
+<div class="stat-label">Projects Guided</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">8+</div>
+<div class="stat-label">Technical Domains</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">24/7</div>
+<div class="stat-label">Support Available</div>
+</div>
+</div>
+
+<section id="services" class="section">
+<h2 class="section-title">Our Guidance Services</h2>
+<p class="section-subtitle">End-to-end academic support for your M.Tech major project</p>
+
+<div class="grid">
+<div class="card">
+<div class="icon-number">01</div>
+<h3>Research Foundation</h3>
+<div class="card-list">
+<div>Topic brainstorming and selection</div>
+<div>Research gap identification</div>
+<div>Problem statement formulation</div>
+<div>IEEE/Scopus literature guidance</div>
+<div>Reference paper suggestions</div>
+</div>
+</div>
+
+<div class="card">
+<div class="icon-number">02</div>
+<h3>Implementation Support</h3>
+<div class="card-list">
+<div>Algorithm and model discussions</div>
+<div>Code walkthrough sessions</div>
+<div>Architecture design guidance</div>
+<div>Module-wise explanations</div>
+<div>Weekly progress reviews</div>
+</div>
+</div>
+
+<div class="card">
+<div class="icon-number">03</div>
+<h3>Documentation Assistance</h3>
+<div class="card-list">
+<div>Thesis structure and formatting</div>
+<div>Ethical plagiarism control</div>
+<div>Chapter organization guidance</div>
+<div>Citations and references</div>
+<div>Results presentation support</div>
+</div>
+</div>
+
+<div class="card">
+<div class="icon-number">04</div>
+<h3>Defense Preparation</h3>
+<div class="card-list">
+<div>Professional PPT creation</div>
+<div>Review session preparation</div>
+<div>Viva question practice</div>
+<div>Final presentation coaching</div>
+<div>Q&A session training</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="domains" class="section">
+<h2 class="section-title">Technical Domains</h2>
+<p class="section-subtitle">Specialized guidance across multiple technology domains</p>
+<div class="card">
+<div class="topic-grid">
+<div class="topic">Machine Learning</div>
+<div class="topic">Deep Learning</div>
+<div class="topic">Natural Language Processing</div>
+<div class="topic">Computer Vision</div>
+<div class="topic">Cybersecurity</div>
+<div class="topic">Internet of Things</div>
+<div class="topic">Cloud Computing</div>
+<div class="topic">Data Analytics</div>
+<div class="topic">Blockchain Technology</div>
+<div class="topic">Artificial Intelligence</div>
+<div class="topic">Big Data</div>
+<div class="topic">Network Security</div>
+</div>
+</div>
+</section>
+
+<section id="topics" class="section">
+<h2 class="section-title">Sample Project Topics</h2>
+<p class="section-subtitle">Examples of recent projects we've guided</p>
+<div class="card">
+<div class="topic-grid">
+<div class="topic">Fake News Detection using NLP</div>
+<div class="topic">Medical Image Classification (CNN)</div>
+<div class="topic">Driver Drowsiness Detection</div>
+<div class="topic">Crop Disease Identification</div>
+<div class="topic">Phishing Website Detection</div>
+<div class="topic">Smart Agriculture IoT Systems</div>
+<div class="topic">Face Recognition Systems</div>
+<div class="topic">Heart Disease Prediction</div>
+<div class="topic">Cyber Attack Prediction</div>
+<div class="topic">Sentiment Analysis Systems</div>
+<div class="topic">Object Detection & Tracking</div>
+<div class="topic">Intrusion Detection Systems</div>
+<div class="topic">Recommendation Systems</div>
+<div class="topic">Speech Recognition</div>
+<div class="topic">Stock Price Prediction</div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="section">
+<div class="contact-section">
+<h2 class="contact-title">Get In Touch</h2>
+<p class="contact-subtitle">Ready to start your M.Tech project? Contact us for personalized guidance</p>
+<div class="contact-info">
+<div class="contact-label">Primary Contact</div>
+<div class="contact-number">+91 9302370048</div>
+<a class="btn" href="https://wa.me/919302370048" style="margin-top:15px;">WhatsApp Now</a>
+</div>
+<div class="contact-info">
+<div class="contact-label">Alternate Contact</div>
+<div class="contact-number">+91 8982552395</div>
+<a class="btn" href="https://wa.me/918982552395" style="margin-top:15px;">WhatsApp Now</a>
+</div>
+<div class="divider"></div>
+<div class="info-box">
+<p><strong>Investment:</strong> Starting from ₹6,500 (varies based on topic complexity and domain)</p>
+<p style="margin-top:15px;">All guidance is strictly for educational and academic learning purposes. Students remain responsible for their own work and submissions according to university guidelines and ethical standards.</p>
+</div>
+</div>
+</section>
+
+</div>
+
+<div class="footer">
+© <span id="year"></span> M.Tech Research Guidance | Professional Academic Support Services
+</div>
+
+<script>
+document.getElementById("year").innerText = new Date().getFullYear();
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+const target = document.querySelector(this.getAttribute('href'));
+if(target){
+target.scrollIntoView({behavior: 'smooth', block: 'start'});
+}
+});
+});
+</script>
+
+</body>
+</html>
